@@ -9,35 +9,62 @@ function App() {
 
   return (
     <>
-      <main className="align-center flex justify-center border-b-2 bg-gray-900 font-bold">
-        <picture></picture>
-        <section title="phone">
-          <div className="screen">
-            <div className="header">
-              <div>{"<"}</div>
-              <div className="profile">
+      <main className="font-regular relative flex flex-col items-center justify-items-center  gap-10 bg-neutral-2 font-rubik text-base text-primary-6">
+        <section
+          title="phone"
+          className=" w-[70%] rounded-3xl border-2 border-red-400 bg-neutral-1 p-2 text-sm"
+        >
+          <div title="screen" className="rounded-2xl bg-neutral-2">
+            <div
+              title="header"
+              className="relative flex flex-row items-center justify-between rounded-t-xl bg-gradient-to-r from-gradient-2 to-gradient-1 p-2 text-neutral-1"
+            >
+              <div className="absolute h-4 w-8 rounded-md bg-neutral-1"></div>
+              <div className="flex items-center gap-2">
+                <div>{"<"}</div>
                 <picture>
-                  <img src={avatar} alt="avatar" />
+                  <img
+                    src={avatar}
+                    alt="avatar"
+                    className="h-8 w-8 rounded-full border-2 border-neutral-1"
+                  />
                 </picture>
-                <div>
+                <div className="flex flex-col">
                   <span>Samuel Green</span>
                   <span>Available to Walk</span>
                 </div>
-                <div>three dots</div>
+              </div>
+
+              <div className="flex flex-col">
+                <span>.</span>
+                <span>.</span>
+                <span>.</span>
               </div>
             </div>
             <div className="chat">
               <p>That sounds great. I’d be happy with that.</p>
               <p>Could you send over some pictures of your dog, please?</p>
-              <div>
+              <div className="flex flex-row gap-2">
                 <picture>
-                  <img src={dog1} alt="dog photo" />
+                  <img
+                    src={dog1}
+                    alt="dog photo"
+                    className="h-8 w-8 rounded-md"
+                  />
                 </picture>
                 <picture>
-                  <img src={dog2} alt="dog photo" />
+                  <img
+                    src={dog2}
+                    alt="dog photo"
+                    className="h-8 w-8 rounded-md"
+                  />
                 </picture>
                 <picture>
-                  <img src={dog3} alt="dog photo" />
+                  <img
+                    src={dog3}
+                    alt="dog photo"
+                    className="h-8 w-8 rounded-md"
+                  />
                 </picture>
               </div>
               <p>Here are a few pictures. She’s a happy girl!</p>
@@ -59,8 +86,10 @@ function App() {
             </div>
           </div>
         </section>
-        <section title="description">
-          <h1>Simple booking</h1>
+        <section title="description" className="p-8 text-center">
+          <h1 className=" pb-4 text-3xl font-medium text-primary-5">
+            Simple booking
+          </h1>
           <p>
             Stay in touch with our dog walkers through the chat interface. This
             makes it easy to discuss arrangements and make bookings. Once the
