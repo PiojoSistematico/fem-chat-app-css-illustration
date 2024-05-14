@@ -1,12 +1,9 @@
-import { useState } from "react";
 import avatar from "./assets/images/avatar.jpg";
 import dog1 from "./assets/images/dog-image-1.jpg";
 import dog2 from "./assets/images/dog-image-2.jpg";
 import dog3 from "./assets/images/dog-image-3.jpg";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <main className="font-regular relative flex h-screen flex-col items-center gap-4 bg-neutral-2 py-8 font-rubik text-sm text-primary-6 md:grid md:grid-cols-2 md:gap-32">
@@ -43,13 +40,13 @@ function App() {
               </div>
             </div>
             <div className="flex flex-col gap-2 p-4">
-              <p className="w-9/12 rounded-md bg-primary-1 p-2 text-primary-2">
+              <p className="w-9/12 animate-[fadeIn_300ms_ease-out_600ms_forwards] rounded-md bg-primary-1 p-2 text-primary-2 opacity-0">
                 That sounds great. I’d be happy with that.
               </p>
-              <p className="w-9/12 rounded-md bg-primary-1 p-2 text-primary-2">
+              <p className="w-9/12 animate-[fadeIn_300ms_ease-out_1200ms_forwards] rounded-md bg-primary-1 p-2 text-primary-2 opacity-0">
                 Could you send over some pictures of your dog, please?
               </p>
-              <div className="flex flex-row gap-2 self-end">
+              <div className="flex animate-[fadeIn_300ms_ease-out_2000ms_forwards] flex-row gap-2 self-end opacity-0">
                 <picture>
                   <img
                     src={dog1}
@@ -72,24 +69,24 @@ function App() {
                   />
                 </picture>
               </div>
-              <p className="w-9/12 self-end rounded-md bg-neutral-1 p-2">
+              <p className="w-9/12 animate-[fadeIn_300ms_ease-out_2000ms_forwards] self-end rounded-md bg-neutral-1 p-2  opacity-0 ">
                 Here are a few pictures. She’s a happy girl!
               </p>
-              <p className="w-9/12 self-end rounded-md bg-neutral-1 p-2">
+              <p className="w-9/12 animate-[fadeIn_300ms_ease-out_2400ms_forwards] self-end rounded-md bg-neutral-1 p-2  opacity-0 ">
                 Can you make it?
               </p>
-              <p className="w-9/12 rounded-md bg-primary-1 p-2 text-primary-2">
+              <p className="w-9/12 animate-[fadeIn_300ms_ease-out_3200ms_forwards] rounded-md bg-primary-1 p-2 text-primary-2 opacity-0 ">
                 She looks so happy! The time we discussed works. How long shall
                 I take her out for?
               </p>
-              <div className="flex w-10/12 flex-row items-center justify-between rounded-md bg-gradient-to-r from-gradient-1 to-gradient-2 p-2 text-neutral-1">
+              <div className=" flex  w-10/12 animate-[fadeIn_300ms_ease-out_3600ms_forwards] flex-row items-center justify-between rounded-md bg-gradient-to-r from-gradient-1 to-gradient-2 p-2 text-neutral-1 opacity-0">
                 <div className="flex flex-row items-center gap-2">
                   <div className="h-4 w-4 rounded-full border border-solid border-neutral-1"></div>{" "}
                   <span>30 minute walk</span>
                 </div>
                 <span className="font-bold">$29</span>
               </div>
-              <div className="flex w-10/12 flex-row items-center justify-between rounded-md bg-gradient-to-r from-gradient-1 to-gradient-2 p-2 text-neutral-1">
+              <div className="flex w-10/12 animate-[fadeIn_300ms_ease-out_3600ms_forwards]  flex-row items-center justify-between rounded-md bg-gradient-to-r from-gradient-1 to-gradient-2 p-2 text-neutral-1 opacity-0">
                 <div className="flex flex-row items-center gap-2">
                   <div className="h-4 w-4 rounded-full border border-solid border-neutral-1"></div>{" "}
                   <span>1 hour walk</span>
